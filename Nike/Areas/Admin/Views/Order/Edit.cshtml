@@ -5,10 +5,10 @@
     QuanLySanPhamEntities _db = new QuanLySanPhamEntities();
     ViewBag.Title = "Xử lí đơn hàng";
     Layout = "~/Areas/Admin/Views/Shared/_layoutadmin.cshtml";
-    KhachHang kh = _db.KhachHangs.Find(Model.KhachHang.idUser);
+    KhachHang kh = _db.KhachHang.Find(Model.KhachHang.idUser);
     NhanVien nvsession = (NhanVien)Session["NV"];
-    NhanVien nv = _db.NhanViens.Find(nvsession.Id);
-    Order orders = _db.Orders.Find(Model.ID);
+    NhanVien nv = _db.NhanVien.Find(nvsession.Id);
+    Order orders = _db.Order.Find(Model.ID);
 
 }
 

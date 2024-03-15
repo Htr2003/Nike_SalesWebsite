@@ -8,7 +8,7 @@
     KhachHang khsession = (KhachHang)Session["Taikhoan"];
     if(khsession != null)
     {
-        KhachHang kh = _db.KhachHangs.Find(khsession.idUser);
+        KhachHang kh = _db.KhachHang.Find(khsession.idUser);
     }
 }
 

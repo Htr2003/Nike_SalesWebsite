@@ -22,7 +22,7 @@ namespace Nike.Models
         public Giohang(int MaSP)
         {
             IdProduct = MaSP;
-            Product product = _db.Products.Single(n => n.Id == IdProduct);
+            Product product = _db.Product.Single(n => n.Id == IdProduct);
             ProductName = product.ProductName;
             Picture = product.Picture;
             DonGia = double.Parse(product.UnitPrice.ToString());

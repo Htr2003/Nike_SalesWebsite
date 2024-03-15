@@ -2,7 +2,7 @@
 @{
     QuanLySanPhamEntities _db = new QuanLySanPhamEntities();
     KhachHang khSession = (KhachHang)Session["Taikhoan"];
-    KhachHang kh = _db.KhachHangs.Find(khSession.idUser);
+    KhachHang kh = _db.KhachHang.Find(khSession.idUser);
 }
 <nav class="category">
     <div class="center">

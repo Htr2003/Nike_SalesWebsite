@@ -8,8 +8,8 @@
     KhachHang kh;
     if (khsession != null)
     {
-        kh = _db.KhachHangs.Find(khsession.idUser);
-        var dsOrder = (from s in _db.Orders
+        kh = _db.KhachHang.Find(khsession.idUser);
+        var dsOrder = (from s in _db.Order
                        where s.KhachHangID == kh.idUser
                        select s).ToList();
     }
@@ -56,7 +56,7 @@
                             </header>
                             <ul class="navbar__notify-list">
                                 @{
-                                    var dsOrder = (from s in _db.Orders
+                                    var dsOrder = (from s in _db.Order
                                                    where s.KhachHangID == kh.idUser
                                                    select s).ToList();
                                     foreach (var noti in dsOrder)

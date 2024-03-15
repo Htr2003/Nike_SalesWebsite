@@ -11,9 +11,9 @@ namespace Nike.DesignPattern
 {
 
      interface Prototype
-    {
+     {
        Prototype Clone();
-    }
+     }
   
     public class ProductPrototype : Prototype
     {

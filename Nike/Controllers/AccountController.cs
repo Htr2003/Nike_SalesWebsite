@@ -115,9 +115,9 @@ namespace Nike.Controllers
             {
                 if (file != null)
                 {
-                    string pic = System.IO.Path.GetFileName(file.FileName);
-                    String path = System.IO.Path.Combine(
-                                            Server.MapPath("~/Hinh/KhachHang"), pic);
+                    string pic = Path.GetFileName(file.FileName);
+                    String path = Path.Combine(Server.MapPath("~/Hinh/KhachHang"), pic);
+
                     file.SaveAs(path);
                     using (MemoryStream ms = new MemoryStream())
                     {

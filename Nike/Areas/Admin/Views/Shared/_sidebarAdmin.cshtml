@@ -2,7 +2,7 @@
 @{
     QuanLySanPhamEntities _db = new QuanLySanPhamEntities();
     NhanVien nvSession = (NhanVien)Session["NV"];
-    NhanVien nv = _db.NhanViens.Find(nvSession.Id);
+    NhanVien nv = _db.NhanVien.Find(nvSession.Id);
 }
 <!-- Sidebar menu-->
 

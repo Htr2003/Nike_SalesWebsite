@@ -6,7 +6,7 @@
     ViewBag.Title = "Đơn đặt hàng";
     Layout = "~/Views/Shared/_Layout.cshtml";
     KhachHang khsession = (KhachHang)Session["Taikhoan"];
-    KhachHang kh = _db.KhachHangs.Find(khsession.idUser);
+    KhachHang kh = _db.KhachHang.Find(khsession.idUser);
 }
 
 @{

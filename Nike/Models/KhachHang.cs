@@ -19,7 +19,7 @@ namespace Nike.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public KhachHang()
         {
-            this.Orders = new HashSet<Order>();
+            this.Order = new HashSet<Order>();
         }
 
         public string oldPassword { get; set; }
@@ -65,7 +65,7 @@ namespace Nike.Models
         public int TichLuy { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Order> Orders { get; set; }
+        public virtual ICollection<Order> Order { get; set; }
     }
     public partial class EditProFile
     {
